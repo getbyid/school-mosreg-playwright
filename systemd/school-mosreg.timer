@@ -1,0 +1,9 @@
+[Unit]
+Description=Checking the school schedule timer
+
+[Timer]
+OnCalendar=*-*-* 16:05:00
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
