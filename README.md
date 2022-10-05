@@ -5,7 +5,7 @@
 На практике пользоваться этим дневником не слишком удобно. Для входа надо дождаться прогрузки
 довольно тяжёлой главной страницы портала (140 запросов, в сумме 12 Мб), покрутить карусель, найти
 нужную плитку с формой логина и пароля. После входа надо аккуратно пробраться на нужную страницу и
-сдалать снимок экрана с домашним заданием, потому что дневник иногда бывает недоступен...
+сделать снимок экрана с домашним заданием, потому что дневник иногда бывает недоступен...
 
 ![Плитка с формой входа в дневник](/resources/login.png?raw=true)
 
@@ -15,7 +15,8 @@
 
 ## Запись действий на странице
 
-https://playwright.dev/docs/codegen
+Заготовку для скрипта можно получить путём
+[записи действий на нужной странице](https://playwright.dev/docs/codegen):
 
 ~~~shell
 $ npx playwright codegen --device="Desktop Edge" uslugi.mosreg.ru
@@ -42,6 +43,7 @@ attempt 5 { x: -450, y: 251.28125, width: 260, height: 209 }
 attempt 6 { x: -130, y: 251.28125, width: 260, height: 209 }
 attempt 7 { x: 190, y: 251.28125, width: 260, height: 209 }
 nextPage https://school.mosreg.ru/userfeed
-URL https://schools.school.mosreg.ru/marks.aspx?school=1000012345678&tab=week
-URL https://schools.school.mosreg.ru/marks.aspx?school=1000012345678&index=2&tab=period&homebasededucation=False
+URL https://schools.school.mosreg.ru/marks.aspx?school=10000........&tab=week
+URL https://schools.school.mosreg.ru/marks.aspx?school=10000........&index=2&tab=period&homebasededucation=False
+weekImage https://imgbox.com/........
 ~~~
